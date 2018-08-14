@@ -14,12 +14,13 @@
 #include "BehaviorTreeGameMode.generated.h"
 
 UCLASS()
-class ABehaviorTreeGameMode : public AGameModeBase
+class GAMEFRAME_API ABehaviorTreeGameMode : public AGameModeBase
 {
     GENERATED_BODY()
 private:
     FVector    m_TargetLocation;
 public:
+    ABehaviorTreeGameMode();
     
     UFUNCTION(BlueprintCallable)
     void    SetTargetLocation(FVector targetLocation);

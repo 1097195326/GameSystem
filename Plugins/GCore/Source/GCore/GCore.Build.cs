@@ -12,9 +12,7 @@ public class GCore : ModuleRules
             new string[] {
                 "GCore/Public",
                 "GCore/Public/BaseCore",
-                "GCore/Public/GameCore",
-                "GCore/Public/BehaviorTreeCore",
-                "GCore/Public/GameModes"
+                "GCore/Public/GameCore"
                 // ... add public include paths required here ...
             }
             );
@@ -24,9 +22,7 @@ public class GCore : ModuleRules
             new string[] {
                 "GCore/Private",
                 "GCore/Private/BaseCore",
-                "GCore/Private/GameCore",
-                "GCore/Private/BehaviorTreeCore",
-                "GCore/Private/GameModes"
+                "GCore/Private/GameCore"
                 // ... add other private include paths required here ...
             }
             );
