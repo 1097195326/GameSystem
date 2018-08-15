@@ -11,6 +11,7 @@
 
 #include "CoreMinimal.h"
 #include "GObject.h"
+#include "Engine/GameInstance.h"
 #include "GAppInstance.generated.h"
 
 UCLASS()
@@ -23,6 +24,9 @@ public:
     static UGAppInstance * GetInstance();
     
     virtual void Init() override;
+    
+    UFUNCTION(Exec)
+    void ShowLog();
     
 };
 

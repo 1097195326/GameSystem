@@ -10,12 +10,12 @@
 
 #include "GObject.h"
 #include "CoreMinimal.h"
-#include "AIController.h"
-
-class AGAIController : public AAIController, public GObject
-{
-public:
-    
-};
+//#include "AIModule/Classes/AIController.h"
+//
+//class AGAIController : public AAIController, public GObject
+//{
+//public:
+//
+//};
 
 

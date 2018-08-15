@@ -10,6 +10,7 @@
 
 #include "CoreMinimal.h"
 #include "GObject.h"
+#include "GameFramework/PlayerController.h"
 #include "GPawnController.generated.h"
 
 UCLASS()

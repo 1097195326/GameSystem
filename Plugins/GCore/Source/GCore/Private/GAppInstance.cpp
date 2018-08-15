@@ -21,3 +21,8 @@ void UGAppInstance::Init()
     
     
 }
+void UGAppInstance::ShowLog()
+{
+    UE_LOG(LogTemp,Log,TEXT("zhx :: UGAppInstance::ShowLog"));
+    
+}

@@ -16,8 +16,11 @@ UCLASS()
 class AUserPawn : public AGPawn
 {
     GENERATED_BODY()
+private:
+    
 public:
-    
+    AUserPawn();
     virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
-    
+    void OneFingerPress();
+    void OnFingerTouch(const ETouchIndex::Type FingerIndex, const FVector Location);
 };

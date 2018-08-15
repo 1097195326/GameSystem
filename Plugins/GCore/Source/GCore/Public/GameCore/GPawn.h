@@ -10,6 +10,7 @@
 
 #include "GObject.h"
 #include "CoreMinimal.h"
+#include "GameFramework/Pawn.h"
 #include "GPawn.generated.h"
 
 UCLASS()

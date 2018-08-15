@@ -7,22 +7,7 @@ public class GameFrame : ModuleRules
 	public GameFrame(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-/*
-        PublicIncludePaths.AddRange(
-        new string[] {
-        "GameFrame/Public",
-        "GameFrame/Public/AppCore/GameModes",
-        "GameFrame/Public/AppCore/UserInterface"
-        }
-        );
-        PrivateIncludePaths.AddRange(
-        new string[] {
-        "GameFrame/Private",
-        "GameFrame/Private/AppCore/GameModes",
-        "GameFrame/Private/AppCore/UserInterface"
-        }
-        );
-*/
+
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "GCore" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
