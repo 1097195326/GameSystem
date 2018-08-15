@@ -6,12 +6,11 @@
 //  Copyright © 2018年 Epic Games, Inc. All rights reserved.
 //
 
-#ifndef GObject_hpp
-#define GObject_hpp
+#pragma once
 
 #include "GLoad.h"
 
-class GObject : public GLoad
+class GCORE_API GObject : public GLoad
 {
 private:
     int     m_ObjectIndex;
@@ -27,4 +26,3 @@ public:
     
 };
 
-#endif /* GObject_hpp */

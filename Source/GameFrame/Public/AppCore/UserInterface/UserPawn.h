@@ -13,14 +13,14 @@
 
 
 UCLASS()
-class AUserPawn : public AGPawn
+class GAMEFRAME_API AUserPawn : public APawn
 {
-    GENERATED_BODY()
+	GENERATED_BODY()
 private:
-    
+
 public:
-    AUserPawn();
-    virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
-    void OneFingerPress();
-    void OnFingerTouch(const ETouchIndex::Type FingerIndex, const FVector Location);
+	AUserPawn();
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
+	void OneFingerPress();
+	void OnFingerTouch(const ETouchIndex::Type FingerIndex, const FVector Location);
 };

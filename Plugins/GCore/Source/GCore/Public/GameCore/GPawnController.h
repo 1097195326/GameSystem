@@ -14,7 +14,7 @@
 #include "GPawnController.generated.h"
 
 UCLASS()
-class AGPawnController : public APlayerController, public GObject
+class GCORE_API AGPawnController : public APlayerController, public GObject
 {
     GENERATED_BODY()
     

@@ -6,11 +6,9 @@
 //  Copyright © 2018年 Epic Games, Inc. All rights reserved.
 //
 
-#ifndef GLoad_hpp
-#define GLoad_hpp
+#pragma once
 
-
-class GLoad
+class GCORE_API GLoad
 {
 public:
     GLoad(){}
@@ -22,4 +20,3 @@ public:
 };
 
 
-#endif

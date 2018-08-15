@@ -14,7 +14,7 @@
 #include "GPawn.generated.h"
 
 UCLASS()
-class AGPawn : public APawn, public GObject
+class GCORE_API AGPawn : public APawn, public GObject
 {
     GENERATED_BODY()
     

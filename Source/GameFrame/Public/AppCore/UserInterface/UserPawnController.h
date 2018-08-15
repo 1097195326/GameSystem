@@ -10,12 +10,13 @@
 
 
 #include "GPawnController.h"
-
 #include "UserPawnController.generated.h"
-
+//
 UCLASS()
-class AUserPawnController : public AGPawnController
+class GAMEFRAME_API AUserPawnController : public AGPawnController
 {
     GENERATED_BODY()
+public:
+
     
 };
