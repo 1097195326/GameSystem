@@ -7,3 +7,9 @@
 //
 
 #include "UserPawnController.h"
+
+
+void AUserPawnController::On_Init()
+{
+	UE_LOG(LogTemp, Log, TEXT("zhx : AUserPawnController::On_Init"));
+}

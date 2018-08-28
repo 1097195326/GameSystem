@@ -13,23 +13,33 @@ static int _GObjectCount = 0;
 GObject::GObject()
 {
     m_ObjectIndex = _GObjectCount++;
-    GOnInit();
+	
 }
 GObject::~GObject()
 {
     m_ObjectIndex = -1;
+	On_Delete();
 }
-void GObject::GOnInit()
+void GObject::On_Init()
 {
-    
+	UE_LOG(LogTemp, Log, TEXT("zhx : object create"));
+
 }
-void GObject::GOnStart()
+void GObject::On_Start()
 {
-    
+
 }
-void GObject::GOnEnd()
+void GObject::On_Tick(float delta)
 {
-    
+
+}
+void GObject::On_End()
+{
+
+}
+void GObject::On_Delete()
+{
+
 }
 int GObject::GetGObjectIndex()
 {

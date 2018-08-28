@@ -8,20 +8,24 @@
 
 #pragma once
 
-#include "GLoad.h"
+#include "IObject.h"
+#include "CoreMinimal.h"
 
-class GCORE_API GObject : public GLoad
+class GCORE_API GObject : public I_Object
 {
 private:
     int     m_ObjectIndex;
 public:
     GObject();
-    ~GObject();
-    
-    virtual void GOnInit() override;
-    virtual void GOnStart() override;
-    virtual void GOnEnd() override;
-    
+    virtual ~GObject();
+
+	virtual void On_Init();
+	virtual void On_Start();
+	virtual void On_Tick(float delta);
+	virtual void On_End();
+	virtual void On_Delete();
+public:
+
     int GetGObjectIndex();
     
 };

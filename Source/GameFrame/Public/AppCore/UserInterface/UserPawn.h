@@ -9,18 +9,34 @@
 #pragma once
 
 #include "GPawn.h"
+#include "Camera/CameraComponent.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "GameFramework/FloatingPawnMovement.h"
 #include "UserPawn.generated.h"
 
 
 UCLASS()
-class GAMEFRAME_API AUserPawn : public APawn
+class GAMEFRAME_API AUserPawn : public AGPawn
 {
 	GENERATED_BODY()
-private:
-
 public:
-	AUserPawn();
-	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
+	AUserPawn(const FObjectInitializer& ObjectInitializer);
+
+	virtual void On_Init() override;
+private:
+	USpringArmComponent * m_CameraArmSpring;
+	UCameraComponent * m_Camera;
+
+	UPROPERTY(VisibleAnywhere)
+	UFloatingPawnMovement * m_Movement;
+public:
+	
+	virtual UPawnMovementComponent* GetMovementComponent() const override;
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
+	//PC
 	void OneFingerPress();
+	void LeftAndRight(float scale);
+	void UpAndDown(float scale);
+	// mobile
 	void OnFingerTouch(const ETouchIndex::Type FingerIndex, const FVector Location);
 };

@@ -18,5 +18,5 @@ class GAMEFRAME_API AUserPawnController : public AGPawnController
     GENERATED_BODY()
 public:
 
-    
+	virtual void On_Init() override;
 };

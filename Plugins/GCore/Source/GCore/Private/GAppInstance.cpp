@@ -19,7 +19,7 @@ void UGAppInstance::Init()
 {
     Super::Init();
     
-    
+	On_Init();
 }
 void UGAppInstance::ShowLog()
 {

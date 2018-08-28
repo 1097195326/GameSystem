@@ -8,3 +8,28 @@
 
 #include "GCore.h"
 #include "GPawn.h"
+
+void AGPawn::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+
+	On_Init();
+}
+void AGPawn::BeginPlay()
+{
+	Super::BeginPlay();
+
+	On_Start();
+}
+void AGPawn::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	On_Tick(DeltaSeconds);
+}
+void AGPawn::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	Super::EndPlay(EndPlayReason);
+
+	On_End();
+}

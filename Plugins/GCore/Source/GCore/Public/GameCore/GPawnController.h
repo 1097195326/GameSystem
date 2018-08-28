@@ -19,6 +19,13 @@ class GCORE_API AGPawnController : public APlayerController, public GObject
     GENERATED_BODY()
     
 public:
+	// feng zhuang APawn ,override AActor Functions 
+	virtual void PostInitializeComponents();
+	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaSeconds) override;
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
+public:
+
     
 };
 
