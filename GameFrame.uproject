@@ -18,6 +18,10 @@
 		{
 			"Name": "GCore",
 			"Enabled": true
+		},
+		{
+			"Name": "EncryptAndDecrypt",
+			"Enabled": true
 		}
 	]
 }

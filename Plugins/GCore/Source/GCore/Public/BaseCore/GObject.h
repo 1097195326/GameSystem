@@ -10,6 +10,7 @@
 
 #include "IObject.h"
 #include "CoreMinimal.h"
+#include "ClassReflect.h"
 
 class GCORE_API GObject : public I_Object
 {
