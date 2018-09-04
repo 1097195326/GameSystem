@@ -67,3 +67,7 @@ bool DataManager::LoadXMLFile(const FString & _xmlPath)
 	doc.Clear();
 	return true;
 }
+UIXMLData * DataManager::GetUIXMLData()
+{
+	return (UIXMLData*)m_DataMap[E_UIXMLData];
+}

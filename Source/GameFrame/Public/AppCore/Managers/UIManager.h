@@ -2,9 +2,11 @@
 
 #include "GObject.h"
 #include "ButtonScript.h"
+#include "CoreMinimal.h"
+#include "BaseUI.h"
 #include <list>
 
-class GCORE_API UIManager : public GObject
+class GAMEFRAME_API UIManager : public GObject
 {
 private:
 	// single instance
@@ -13,7 +15,7 @@ private:
 public:
 	static UIManager * GetInstance();
 
-
+	UBaseUI* OpenUI(const FString & _uiName);
 
 	template<typename T>
 	void RegisterButton(int _bid, UButton * _btn, T * _obj, void(T::*_func)(int))

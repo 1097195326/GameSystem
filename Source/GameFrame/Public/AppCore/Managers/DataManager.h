@@ -2,8 +2,16 @@
 
 #include "GData.h"
 #include <map>
+#include "UIXMLData.h"
 
 using namespace std;
+
+enum DataIndex
+{
+	E_UIXMLData = 100
+
+
+};
 
 class GAMEFRAME_API DataManager : public GObject
 {
@@ -17,5 +25,8 @@ public:
 	static DataManager * GetInstance();
 
 	void LoadAllXMLData();
-	
+
+
+	UIXMLData * GetUIXMLData();
+
 };
