@@ -2,6 +2,11 @@
 #include "BaseUI.h"
 
 
+UBaseUI::UBaseUI(const FObjectInitializer& ObjectInitializer):Super(ObjectInitializer)
+{
+	//
+
+}
 
 bool UBaseUI::Initialize()
 {
@@ -11,6 +16,12 @@ bool UBaseUI::Initialize()
 		return true;
 	}
 	return false;
+}
+void UBaseUI::NativeConstruct()
+{
+	Super::NativeConstruct();
+
+
 }
 void UBaseUI::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 {

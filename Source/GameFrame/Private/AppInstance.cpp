@@ -3,6 +3,6 @@
 
 void UAppInstance::On_Init()
 {
-	Data_M->LoadXMLData();
+	Data_M->LoadAllXMLData();
 
 }

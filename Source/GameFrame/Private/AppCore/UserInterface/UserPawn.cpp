@@ -83,7 +83,7 @@ void AUserPawn::LeftAndRight(float scale)
 	if (m_Movement && m_Movement->UpdatedComponent == RootComponent)
 	{
 		m_Movement->AddInputVector(GetActorRightVector() * scale);
-		UE_LOG(LogTemp, Log, TEXT("zhx : acale %f"), scale);
+		//UE_LOG(LogTemp, Log, TEXT("zhx : acale %f"), scale);
 	}
 	
 }

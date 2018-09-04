@@ -8,7 +8,7 @@ DataManager * DataManager::GetInstance()
 	static DataManager m;
 	return &m;
 }
-void DataManager::LoadXMLData()
+void DataManager::LoadAllXMLData()
 {
 	//
 	FString mContentDir = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir());

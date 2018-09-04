@@ -8,7 +8,7 @@ public class GameFrame : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "GCore", "GXmlPlugins", "EncryptAndDecrypt" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "GCore", "GXmlPlugins", "EncryptAndDecrypt" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

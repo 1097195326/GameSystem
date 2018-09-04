@@ -16,6 +16,6 @@ private:
 public:
 	static DataManager * GetInstance();
 
-	void LoadXMLData();
+	void LoadAllXMLData();
 	
 };
